@@ -1,1 +1,1 @@
-Final result: ![Final result -  SmileSchool](/src/preview.gif)
+Final result: <br>  ![Final result -  SmileSchool](/src/preview.gif)
