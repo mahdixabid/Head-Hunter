@@ -1,12 +1,14 @@
 let BtnMobile = document.getElementById('toggle')
-let MobileMenu = document.getElementById('mobile')
+let BlocMobile = document.getElementById('BlocMobile')
+let classes = BtnMobile.classList;
 
 BtnMobile.addEventListener('click', function() {
-    if (MobileMenu.style.display == 'none') {
-        MobileMenu.style.display = 'flex';
+    const result = classes.toggle("c");
+    if (result == true) {
+        BlocMobile.classList.add('BlocMobileOn')
         BtnMobile.src = "./src/close.png"
     } else {
-        MobileMenu.style.display = 'none';
+        BlocMobile.classList.remove('BlocMobileOn')
         BtnMobile.src = "./src/menu.png"
     }
 })
